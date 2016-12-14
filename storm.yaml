@@ -1,9 +1,9 @@
 storm.zookeeper.servers:
-    - "cdh2218"
-    - "cdh2219"
-    - "cdh2220"
+    - "zk01"
+    - "zk02"
+    - "zk03"
 storm.zookeeper.port: 2181
-nimbus.seeds: ["cdh2211"]
+nimbus.seeds: ["cm01","cm02"]
 
 supervisor.slots.ports:
     - 6700
