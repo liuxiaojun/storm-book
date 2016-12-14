@@ -1,0 +1,18 @@
+storm.zookeeper.servers:
+    - "cdh2218"
+    - "cdh2219"
+    - "cdh2220"
+storm.zookeeper.port: 2181
+nimbus.seeds: ["cdh2211"]
+
+supervisor.slots.ports:
+    - 6700
+    - 6701
+    - 6702
+    - 6703
+
+storm.local.dir: "/data/system/storm/storm_log"
+storm.health.check.dir: "healthchecks"
+storm.health.check.timeout.ms: 5000
+worker.childopts: "-Xmx2048m"
+supervisor.childopts: "-Xmx2048m"
